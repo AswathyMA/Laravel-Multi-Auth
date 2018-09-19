@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>MyWeb</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
@@ -62,6 +62,12 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+
+            /* WORKS IN CHROME, SIMILAR THING FOR OTHER BROWSERS WITHOUT BREAKING TEXT OVERFLOW? */
+            ::-webkit-scrollbar {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -70,27 +76,29 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/dashboard') }}">Home</a>
+                        <a href="{{ url('/dashboard') }}">{{ Auth::user()->name }}</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
                     @endauth
                 </div>
             @endif
+            <img src="/images/laravel.jpg" style="width:100%;height:100%;">
+            <!-- <div class="content"> -->
+               
+                <!-- <div class="title m-b-md">
+                    
+                </div> -->
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
+                <!-- <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">Login</a>
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
         </div>
     </body>
 </html>

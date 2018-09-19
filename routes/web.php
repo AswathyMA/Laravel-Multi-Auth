@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('welcome');
 });
 Route::prefix('admin')->group(function() {
     Route::get('/login', 'Auth\AdminLoginController@showLoginForm')->name('admin.login');
