@@ -83,7 +83,7 @@
                     @endauth
                 </div>
             @endif
-            <img src="/images/laravel.jpg" style="width:100%;height:100%;">
+            <img src="/images/create-img.jpg" style="width:100%;height:100%;">
             <!-- <div class="content"> -->
                
                 <!-- <div class="title m-b-md">
