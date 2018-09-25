@@ -1,15 +1,13 @@
 <!-- Footer -->
+@if (Route::has('login'))
+@auth
 <footer class="page-footer font-small mdb-color lighten-3 pt-4">
-
   <!-- Footer Elements -->
   <div class="container">
-
     <!--Grid row-->
     <div class="row">
-
       <!--Grid column-->
       <div class="col-lg-2 col-md-12 mb-4" >
-
         <!--Image-->
         <div class="view overlay z-depth-1-half" >
           <a href="javascript:void(0);"><img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid" alt="" onclick="changeimg(this.src)" id="clk1"></a>
@@ -20,10 +18,8 @@
 
       </div>
       <!--Grid column-->
-
       <!--Grid column-->
       <div class="col-lg-2 col-md-6 mb-4">
-
         <!--Image-->
         <div class="view overlay z-depth-1-half">
           <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid" alt="" id="img2" onclick="changeimg(this.src)">
@@ -34,10 +30,8 @@
 
       </div>
       <!--Grid column-->
-
       <!--Grid column-->
       <div class="col-lg-2 col-md-6 mb-4">
-
         <!--Image-->
         <div class="view overlay z-depth-1-half">
           <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid" alt="" id="img3" onclick="changeimg(this.src)">
@@ -102,6 +96,7 @@
     <a href="https://mdbootstrap.com/bootstrap-tutorial/">Aswathy</a>
   </div>
   <!-- Copyright -->
-
 </footer>
+@endauth
+@endif
 <!-- Footer -->
