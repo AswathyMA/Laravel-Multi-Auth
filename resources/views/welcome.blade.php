@@ -77,11 +77,11 @@
                     @auth
                         <a href="{{ url('/dashboard') }}">Home</a>
                         <a href="{{ url('/dashboard') }}">{{ Auth::user()->name }}</a>
+                        <a href="{{ route('admin.login') }}">Admin</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
-                        <a href="{{ route('admin.login') }}">Admin Login</a>
-                        
+                        <a href="{{ route('admin.login') }}">Admin</a>
                     @endauth
                 </div>
             @endif
