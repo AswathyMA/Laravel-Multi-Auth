@@ -92,8 +92,8 @@
   <!-- Footer Elements -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="https://about.me/aswathyma" target="_blank">Aswathy</a>
+  <div class="footer-copyright text-center py-3">Last Login @ {{Auth::user()->last_login}} © 
+    <a href="https://about.me/aswathyma" target="_blank">aswathy</a>
   </div>
   <!-- Copyright -->
 </footer>
